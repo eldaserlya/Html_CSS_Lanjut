@@ -1,36 +1,41 @@
-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Membagi halaman menjadi 3 kolom */
-    grid-template-rows: auto auto 1fr auto; /* Menentukan baris untuk setiap bagian */
-    grid-template-areas:
-        "header header header"
-        "menu main right"
-        "menu main right"
-        "footer footer footer";
-}
+     body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Divide the page into 3 columns */
+            grid-template-rows: auto auto 1fr auto; /* Specify rows for each section */
+            grid-template-areas:
+                "header header header"
+                "menu main right"
+                "menu main right"
+                "footer footer footer";
+        }
 
-header {
-    grid-area: header;
-}
+        header {
+            grid-area: header;
+            border: 1px solid black; /* Add border to differentiate sections */
+            padding: 20px; /* Add padding for space around content */
+        }
 
-nav {
-    grid-area: menu;
-}
+        nav {
+            grid-area: menu;
+            border: 1px solid black; /* Make the Menu box square */
+            padding: 20px; /* Add padding for space around content */
+        }
 
-main {
-    grid-area: main;
-}
+        main {
+            grid-area: main;
+            border: 1px solid black; /* Add border to differentiate sections */
+            padding: 20px; /* Add padding for space around content */
+        }
 
-aside {
-    grid-area: right;
-}
+        aside {
+            grid-area: right;
+            border: 1px solid black; /* Add border to differentiate sections */
+            padding: 20px; /* Add padding for space around content */
+        }
 
-footer {
-    grid-area: footer;
-}
-
-/* Styling untuk setiap bagian */
-header, nav, main, aside, footer {
-    border: 1px solid black; /* Menambahkan border untuk membedakan setiap bagian */
-    padding: 20px; /* Menambahkan padding untuk ruang di sekitar konten */
-}
+        footer {
+            grid-area: footer;
+            border: 1px solid black; /* Add border to differentiate sections */
+            padding: 20px; /* Add padding for space around content */
+        }
+    
