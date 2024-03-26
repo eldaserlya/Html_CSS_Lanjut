@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTP-8">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            display:flex;
+            flex-direction: row; /* Atur arah flexbox menjadi horizontal */
+            justify-content: space-between;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .wadah_flex div {
+            width: 100px; /* Atur lebar setiap elemen div */
+            height: 100px; /* Atur tinggi setiap elemen div */
+            background-color: red; /* Atur warna latar belakang */
+            text-align: center; /* Atur teks ke tengah */
+            line-height: 100px;
+        } 
+        .wadah_flex div:nth-child(1) {
+            background-color: skyblue;
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+        }
+        .wadah_flex div:nth-child(2) {
+            background-color: lightgray;
+            margin: 15px;
+            padding: 15px;
+            font-size: 50px;
+        }
+        .wadah_flex div:nth-child(3) {
+            background-color: lightsalmon;
+            margin: 15px;
+            padding: 15px;
+            font-size: 30px;
+        }
+
+    </style>
+    </head>
+        <body>
+            <div class="wadah_flex">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+            <p>Kesimpulan Skenariio 1 adalah : Jika tidak ada warna pada gotak dan 
+                halam webnya, maka kotak atau border tidak dapat dilihat. jika ada warnanya, maka warna
+                akan daapt dilihat.
+            </p>
+            <p>Kesimpulan Skenario 2 adalah:</p>
+            <p>Kesimpulan Skenario 3 adalah : Kolom Kebawah 12-1</p>
+            <p>Kesimpulan Skenario 4 adalah :Kolom menyamping 1-12</p>
+            <p>Kesimpulan Skenario 5 adalah : kolomnya urut kesamping dan kotaknya lebih rapi</p>
+        </body>
+</html>
