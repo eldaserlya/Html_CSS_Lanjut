@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Membagi halaman menjadi 3 kolom */
+    grid-template-rows: auto auto auto 1fr auto; /* Menentukan baris untuk setiap bagian */
+    grid-template-areas:
+        "header header header"
+        "menu main right"
+        "menu main right"
+        ". . ."
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: menu;
+    /* Menjadikan kotak Menu persegi */
+    border: 1px solid black;
+    padding: 20px;
+}
+
+main {
+    grid-area: main;
+    border: 1px solid black; /* Menambahkan border untuk membedakan setiap bagian */
+    padding: 20px; /* Menambahkan padding untuk ruang di sekitar konten */
+}
+
+aside {
+    grid-area: right;
+    border: 1px solid black; /* Menambahkan border untuk membedakan setiap bagian */
+    padding: 20px; /* Menambahkan padding untuk ruang di sekitar konten */
+}
+
+footer {
+    grid-area: footer;
+    /* Mengatur lebar dan posisi Footer */
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/* Styling untuk setiap bagian */
+header {
+    border: 1px solid black; /* Menambahkan border untuk membedakan setiap bagian */
+    padding: 20px; /* Menambahkan padding untuk ruang di sekitar konten */
+}
