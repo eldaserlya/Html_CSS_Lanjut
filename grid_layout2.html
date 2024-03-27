@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTP-8">
+        <title>Layout Lanjutan</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-template-columns: auto auto;
+        }
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end:3 ;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .kesimpulan {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 3px;
+            margin-top: 3px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            </div>
+            <p>Kesimpulan skenario 1 : Untuk skenario pertama, mengubah kolom grid start dan end. Start tetap pada angka 1 dan end pada angka 5, menampilkan hasil yang sama jika start diubah menjadi angka lain seperti 2 atau 3 item tidak akan memenuhi satu halaman penuh, dan untuk end item berakhir di angka 5.</p>
+            <p>kesimpulan skenario 2 : 
+            <p>untuk kolom auto auto auto auto menyesuaikan lebar dari empat kolom secara otomatis disesuaikan dengan konten di dalamnya.</p>
+            <p>untuk kolom auto auto menyesuaikan lebar dari dua kolom secara otomatis disesuaikan dengan konten di dalamnya.</p>
+            <p>untuk kolom 70px 300px auto 40px menetapkan nilai yang berbeda untuk lebar kolom pertama-keempat, untuk pertama ditetapkan lebar 70px, kedua 300px, kolom ketiga auto, dan kolom keempat 40px</p>
+            <p>untuk kolom 10px 500px 20px 10px menetapkan nilai yang berbeda untuk lebar kolom pertama-keempat, untuk pertama ditetapkan lebar 10px, kedua 500px, kolom ketiga 20px, dan kolom keempat 10px</p>
+            <p></p>
+        </div>
+    </body>
+</html>
